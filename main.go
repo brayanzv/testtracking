@@ -17,7 +17,7 @@ func main() {
 	router.HandleFunc("/endpoint", locationHandler)
 
 	log.Println("Server started on localhost:8000")
-	log.Fatal(http.ListenAndServe(":8000", router))
+	log.Fatal(http.ListenAndServe(":8080", router))
 }
 
 func locationHandler(w http.ResponseWriter, r *http.Request) {
